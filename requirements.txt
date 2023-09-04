@@ -1,0 +1,2 @@
+# get requirements via setup.py
+-e .
