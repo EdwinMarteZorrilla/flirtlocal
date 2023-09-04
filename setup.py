@@ -4,15 +4,16 @@ import re
 
 import setuptools
 
-with open("README.md", "r") as f:
+with open("README.md", "r", encoding='utf-8') as f:
     long_description = f.read()
 
 here = os.path.abspath(os.path.dirname(__file__))
 
 
 def read(*parts):
-    with codecs.open(os.path.join(here, *parts), 'r') as fp:
+    with codecs.open(os.path.join(here, *parts), 'r', encoding='utf-8') as fp:
         return fp.read()
+
 
 
 def find_version(*file_paths):
